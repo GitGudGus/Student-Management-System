@@ -1,18 +1,35 @@
 # Student-Management-System
 This repository contains a Student Management System developed as a final project for a Database Management course. The system demonstrates the integration of a normalized relational database with a graphical user interface, highlighting practical applications of database concepts and Python programming.
 
-The backend is powered by MySQL, with a schema designed in third normal form (3NF) to ensure data consistency, reduce redundancy, and maintain referential integrity. The schema includes tables and relationships to manage student information, supporting core operations such as account creation, login authentication, updating records, and account deletion.
+# Student Management System
 
-The frontend is implemented using Python with Tkinter, providing a simple but functional GUI through which users can interact with the database. All database interactions are handled using parameterized SQL queries via the PyMySQL library, reinforcing secure database access practices. The project emphasizes clean design and straightforward implementation, making it accessible for demonstration and educational purposes.
+A database management project implementing a simple Student Management System using **MySQL** and **Python (Tkinter)**.  
+This system provides basic student account functionality through a graphical user interface (GUI) connected to a normalized relational database.
 
-Key features of the system include:
+---
 
-Registering new students with unique email addresses.
+## Features
+- Register new students with unique email addresses  
+- User login with credential verification  
+- Update account details (name and/or password)  
+- Delete accounts from the system  
+- All GUI actions interact directly with the MySQL database using parameterized SQL queries  
 
-Secure login functionality to validate credentials.
+---
 
-Ability to update personal details such as name and password.
+## Requirements
+- Python 3.x  
+- Libraries:  
+  - `pymysql`  
+  - `tkinter`  
+- MySQL Server (localhost)  
+- MySQL Workbench  
 
-Deletion of student accounts directly from the system.
+---
 
-This project highlights the end-to-end process of designing, building, and deploying a database-backed application. It combines relational database design principles, SQL programming, and Python GUI development, offering a practical example of how these technologies can be used together in academic and professional contexts.
+## Installation and Usage
+1. Start the MySQL server locally.  
+2. Run the provided schema script to create the database:  
+   ```bash
+   mysql -u root -p < students_schema.sql
+
