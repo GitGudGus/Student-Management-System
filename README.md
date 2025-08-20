@@ -30,16 +30,17 @@ This repository contains a Student Management System developed as a final projec
 
 3. Launch the GUI application:
 
-   python app.py
-
+```bash
+python app.py
+```
 
 4. Use the interface to:
 
-    Register a new student
+Register a new student
 
-    Log in with valid credentials
+Log in with valid credentials
 
-    Update account information
+Update account information
 
-    Delete an account
+Delete an account 
 
